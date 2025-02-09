@@ -33,6 +33,13 @@ main {
     color: #333333;
 }
 
+img {
+    width: 300px;  /* Adjust width as needed */
+    height: auto;  /* Maintains aspect ratio */
+    display: block;
+    margin: 10px auto; /* Centers the image */
+}
+
 footer {
     background-color: #7e6b73;
     color: white;
