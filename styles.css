@@ -29,6 +29,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+main {
+    max-width: 800px; /* Controls the width of content */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds spacing inside the section */
+}
+
+body {
+    padding: 0 20px; /* Adds padding on both sides */
+}
+
 /* Centered Image Styling */
 .centered-image {
     display: flex;
