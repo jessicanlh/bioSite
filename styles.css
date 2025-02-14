@@ -29,6 +29,30 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Centered Image Styling */
+.centered-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers image horizontally */
+    justify-content: center; /* Centers image vertically if needed */
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing from text */
+}
+
+.centered-image img {
+    width: 60%; /* Adjust size as needed */
+    max-width: 500px; /* Prevents it from getting too large */
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+}
+
+.centered-image figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
