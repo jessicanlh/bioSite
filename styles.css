@@ -8,10 +8,12 @@ body {
 }
 
 header {
-    background-color: #c94268; /* Rose */
+    width: 100%; /* Ensures full width */
+    background-color: #c94268; /* Your primary color */
     color: white;
-    padding: 15px;
+    padding: 15px 0; /* Adds vertical spacing */
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -130,9 +132,11 @@ figcaption {
 
 /* Footer */
 footer {
-    background-color: #333;
+    width: 100%; /* Ensures full width */
+    background-color: #333333; /* Charcoal secondary color */
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 10px 0; /* Adds some spacing */
+    position: relative;
+    bottom: 0;
 }
