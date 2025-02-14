@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -22,18 +23,26 @@
         <section>
             <h2>My Work</h2>
             <p>Jane is a passionate and dedicated case manager for Child Protective Services (CPS), with nearly a decade of experience working with families. With a background in psychology, Jane originally moved to Denver after graduating and stumbled into a social work. Over the years, they have not only provided support to families but also championed LGBTQ+ initiatives in the workplace, including organizing a booth at Denver Pride every year. For Jane, celebrating and supporting minority communities is not just work, it’s a personal mission, especially in light of the current political climate. </p>
-            <figure>
-                <img src="pridesign1.JPG">
-                <figcaption>Protect Trans Kids sign for Denver Pride</figcaption>
-            </figure>
-            <figure>
-                <img src="images/pridesign2.JPG">
-                <figcaption>Sign featuring Sphen and Magic, two male penguins who adopted and raised two chicks together in Australia.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/pridesign3.JPG">
-                <figcaption>Sign featuring Murphy, the bald eagle who wanted a chick so bad he tried to hatch a rock. </figcaption>
-            </figure>
+           
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/pridesign1.jpg" alt="Protect Trans Kids sign">
+                    <figcaption>Protect Trans Kids sign for Denver Pride</figcaption>
+                </div>
+                <div class="slide fade">
+                    <img src="images/pridesign2.jpg" alt="Sphen and Magic sign">
+                    <figcaption>Sign featuring Sphen and Magic, two male penguins who adopted and raised two chicks together in Australia.</figcaption>
+                </div>
+                <div class="slide fade">
+                    <img src="images/pridesign3.jpg" alt="Murphy the bald eagle sign">
+                    <figcaption>Sign featuring Murphy, the bald eagle who wanted a chick so bad he tried to hatch a rock.</figcaption>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
         </section>
     </main>
     <footer>
