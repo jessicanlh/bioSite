@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,32 +21,26 @@
     </header>
     <main>
         <section>
-            <div class="content-wrapper">
-                <!-- Text Section -->
-                <div class="text-section">
-                    <h2>Welcome to Jane's World</h2>
-                    <p>Jane is a passionate case manager for Child Protective Services, dedicated to supporting families and advocating for LGBTQ+ initiatives. A proud organizer of Denver Pride’s workplace booth, Jane is committed to uplifting minority communities. Outside of work, they thrive on creativity—hiking with their dog Juno, cosplaying, gaming, and making art. A natural extrovert, Jane loves connecting with others through local events and murder mystery parties. With dreams of traveling the world and writing a novel, they continue to balance advocacy, adventure, and storytelling in their journey.</p>
+            <h2>Welcome to Jane's World</h2>
+            <p>Jane is a passionate case manager for Child Protective Services, dedicated to supporting families and advocating for LGBTQ+ initiatives. A proud organizer of Denver Pride’s workplace booth, Jane is committed to uplifting minority communities. Outside of work, they thrive on creativity—hiking with their dog Juno, cosplaying, gaming, and making art. A natural extrovert, Jane loves connecting with others through local events and murder mystery parties. With dreams of traveling the world and writing a novel, they continue to balance advocacy, adventure, and storytelling in their journey.</p>
+              <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="profile2.jpg" alt="Jane Rio">
+                    <figcaption>Jane Rio</figcaption>
+                </div>
+                <div class="slide fade">
+                    <img src="italiangardens.JPG" alt="Jane and their Mom">
+                    <figcaption>Jane and their mom at the Italian Gardens in Kensington</figcaption>
+                </div>
+                <div class="slide fade">
+                    <img src="bigben.JPG" alt="Jane and Big Ben">
+                    <figcaption>Jane at Big Ben (or the Elizabeth Tower if you want to be correct).</figcaption>
                 </div>
 
-                <!-- Slideshow Container -->
-                <div class="carousel-container">
-                    <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
-                    <div class="carousel">
-                        <div class="carousel-slide">
-                            <img src="profile2.jpg" alt="Jane Rio">
-                            <figcaption>Jane Rio</figcaption>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="italiangardens.jpg" alt="Jane and their Mom">
-                            <figcaption>Jane and their mom at the Italian Gardens in Kensington</figcaption>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="bigben.jpg" alt="Jane and Big Ben">
-                            <figcaption>Jane at Big Ben (or the Elizabeth Tower if you want to be correct).</figcaption>
-                        </div>
-                    </div>
-                    <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
-                </div>
+                <!-- Navigation Buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
         </section>
     </main>
