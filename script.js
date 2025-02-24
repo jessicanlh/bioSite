@@ -1,34 +1,23 @@
-let slideIndex = 0;
-let slides;
+document.addEventListener("DOMContentLoaded", () => {
+    let currentIndex = 0;
+    const images = document.querySelectorAll(".carousel img");
+    const totalImages = images.length;
 
-function showSlides(n) {
-    slides = document.querySelectorAll(".slide");
-
-    if (n >= slides.length) {
-        slideIndex = 0;
-    } else if (n < 0) {
-        slideIndex = slides.length - 1;
-    } else {
-        slideIndex = n;
+    function showSlide(index) {
+        images.forEach((img, i) => {
+            img.style.display = i === index ? "block" : "none";
+        });
     }
 
-    slides.forEach(slide => slide.style.display = "none");
-    slides[slideIndex].style.display = "block";
-}
+    document.querySelector(".next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % totalImages;
+        showSlide(currentIndex);
+    });
 
-// Auto slide every 3 seconds
-function autoSlide() {
-    showSlides(slideIndex + 1);
-    setTimeout(autoSlide, 3000);
-}
+    document.querySelector(".prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        showSlide(currentIndex);
+    });
 
-// Change slide manually
-function changeSlide(n) {
-    showSlides(slideIndex + n);
-}
-
-// Start slideshow on page load
-document.addEventListener("DOMContentLoaded", function () {
-    showSlides(slideIndex);
-    setTimeout(autoSlide, 3000);
+    showSlide(currentIndex);
 });
