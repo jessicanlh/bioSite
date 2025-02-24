@@ -68,7 +68,8 @@ body {
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
-    max-width: 500px; /* Adjust size as needed */
+    width: 600px; /* Adjust size as needed */
+    height: 400px;
     margin: 20px auto;
     text-align: center;
 }
