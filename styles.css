@@ -1,24 +1,24 @@
-/* Global Styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f7f0; /* Off-white */
+    background-color: #f8f7f0; /* Off white */
+    color: #333333; /* Charcoal */
 }
 
-/* Header Styling */
 header {
-    background-color: #c94268; /* Rose */
+    width: 100%; /* Ensures full width */
+    background-color: #c94268; /* Your primary color */
     color: white;
-    padding: 15px;
+    padding: 15px 0; /* Adds vertical spacing */
     text-align: center;
-    width: 100%;
+    position: relative;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
@@ -31,80 +31,112 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Content Wrapper */
-.content-wrapper {
+main {
+    max-width: 800px; /* Controls the width of content */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds spacing inside the section */
+}
+
+body {
+    padding: 0 20px; /* Adds padding on both sides */
+}
+
+/* Centered Image Styling */
+.centered-image {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center; /* Centers image horizontally */
+    justify-content: center; /* Centers image vertically if needed */
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing from text */
 }
 
-/* Text Section */
-.text-section {
-    flex: 1;
-    max-width: 500px;
-    margin-right: 20px;
+.centered-image img {
+    width: 60%; /* Adjust size as needed */
+    max-width: 500px; /* Prevents it from getting too large */
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
 }
 
-/* Carousel Container */
-.carousel-container {
-    display: flex;
-    align-items: center;
+.centered-image figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Slideshow Container */
+.slideshow-container {
     position: relative;
-    width: 400px;
+    max-width: 500px; /* Adjust size as needed */
+    margin: 20px auto;
+    text-align: center;
 }
 
-/* Carousel */
-.carousel {
-    width: 400px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-/* Carousel Images */
-.carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.slide {
     display: none;
+    text-align: center;
 }
 
-/* Show first image initially */
-.carousel img:first-child {
-    display: block;
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #7e6b73; /* Light warm gray */
+    margin-top: 5px;
 }
 
 /* Navigation Buttons */
-.carousel-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+.prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
 }
 
-/* Positioning Navigation Buttons */
-.carousel-button.prev {
-    left: -40px;
+/* Positioning */
+.prev {
+    left: 10px;
 }
 
-.carousel-button.next {
-    right: -40px;
+.next {
+    right: 10px;
 }
 
-/* Footer Styling */
+/* Button Hover Effect */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Smooth Fade Transition */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Footer */
 footer {
-    background-color: #333333; /* Charcoal */
+    width: 100%; /* Ensures full width */
+    background-color: #333333; /* Charcoal secondary color */
     color: white;
     text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: fixed;
+    padding: 10px 0; /* Adds some spacing */
+    position: relative;
     bottom: 0;
 }
