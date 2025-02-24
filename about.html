@@ -1,4 +1,3 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,31 +21,23 @@
     <main>
         <section>
             <div class="content-wrapper">
-                <div class="text-selection">
+                <!-- Text Section -->
+                <div class="text-section">
                     <h2>My Work</h2>
-                    <p>Jane is a passionate and dedicated case manager for Child Protective Services (CPS), with nearly a decade of experience working with families. With a background in psychology, Jane originally moved to Denver after graduating and stumbled into a social work. Over the years, they have not only provided support to families but also championed LGBTQ+ initiatives in the workplace, including organizing a booth at Denver Pride every year. For Jane, celebrating and supporting minority communities is not just work, it’s a personal mission, especially in light of the current political climate. </p>
+                    <p>Jane is a passionate and dedicated case manager for Child Protective Services (CPS), with nearly a decade of experience working with families. With a background in psychology, Jane originally moved to Denver after graduating and stumbled into social work. Over the years, they have not only provided support to families but also championed LGBTQ+ initiatives in the workplace, including organizing a booth at Denver Pride every year. For Jane, celebrating and supporting minority communities is not just work, it’s a personal mission, especially in light of the current political climate.</p>
                 </div>  
-           
-            <!-- Slideshow Container -->
-                <div class="slideshow-container">
-                    <div class="slide fade">
-                        <img src="pridesign1.JPG" alt="Protect Trans Kids sign">
-                        <figcaption>Protect Trans Kids sign for Denver Pride</figcaption>
-                    </div>
-                    <div class="slide fade">
-                        <img src="pridesign2.JPG" alt="Sphen and Magic sign">
-                        <figcaption>Sign featuring Sphen and Magic, two male penguins who adopted and raised two chicks together in Australia.</figcaption>
-                    </div>
-                    <div class="slide fade">
-                        <img src="pridesign3.JPG" alt="Murphy the bald eagle sign">
-                        <figcaption>Sign featuring Murphy, the bald eagle who wanted a chick so bad he tried to hatch a rock.</figcaption>
-                    </div>
 
-                    <!-- Navigation Buttons -->
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <!-- Slideshow Container -->
+                <div class="carousel-container">
+                    <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <div class="carousel">
+                        <img src="images/pridesign1.jpg" alt="Protect Trans Kids sign">
+                        <img src="images/pridesign2.jpg" alt="Sphen and Magic sign">
+                        <img src="images/pridesign3.jpg" alt="Murphy the bald eagle sign">
+                    </div>
+                    <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
                 </div>
-             </div>
+            </div>
         </section>
     </main>
     <footer>
